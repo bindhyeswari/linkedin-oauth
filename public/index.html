@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Linkedin Application</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<div class="spacer-50"></div>
+<div class="container">
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                Status
+            </div>
+            <div class="panel-footer">
+                <span id="login-status">
+                    Please wait while we check your status for login ...
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-lg-6">
+            <ul class="list-group input-form">
+                <li class="list-group-item active">
+                    Enter your login details OR login via linked In
+                </li>
+                <li class="list-group-item">
+                    <input type="text" placeholder="enter username">
+                </li>
+                <li class="list-group-item">
+                    <input type="text" placeholder="enter username">
+                </li>
+            </ul>
+
+            <div style="text-align: center">
+                <a href="/auth/linkedin" type="button" class="btn btn-success">Login Via LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
