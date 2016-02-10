@@ -41,9 +41,8 @@ module.exports = function (app) {
     // set up the session for the app
     app.use(session({
         secret: 'blueship482',
-        resave: false,
-        saveUninitialized: true,
-        cookie: { secure: true }
+        resave: true,
+        saveUninitialized: true
     }));
 
     app.use(passport.initialize());

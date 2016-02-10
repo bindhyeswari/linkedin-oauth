@@ -11,7 +11,7 @@ $(function () {
         success: function (data, status, jqXHR) {
             console.log(data);
             // user is authenticated
-            $('#login-status').html('Hi there! What do you want to get done today?');
+            $('#login-status').html('Hi ' + data.user.displayName + '! What do you want to get done today?');
         },
         error: function (jqXHR) {
             if (jqXHR.status === 401) {
